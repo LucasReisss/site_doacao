@@ -1,0 +1,33 @@
+.nav-wrapper{
+	background-color: #4FA1B6;
+}
+
+.slider .indicators .indicator-item.active{
+	background-color: #4FA1B6;
+}
+
+.move {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.parallax-container{
+	min-height: 280px;
+	height: auto;
+}
+
+.icon{
+	color: #4FA1B6;
+}
+
+.fform{
+	background-color: #4FA1B6 !important;
+}
+
+.footer-one {
+	background: #4FA1B6;
+}
+
+.footer-two {
+	background: #3a7585;
+}

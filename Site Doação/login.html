@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doação</title>
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+	<!-- M icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Actual M -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<section class="fnavbar">
+		<nav class="nav-fixed">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Doação</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li>
+						<form>
+							<div class="input-field" style="max-width: 450px;">
+								<input id="search" type="search" required>
+								<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+								<i class="material-icons">close</i>
+							</div>
+						</form>
+					</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a class="waves-effect waves-light btn" href="cadastro.html">Criar Conta</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class="fcards">
+			<div class="row">
+				<div class="col s12 m4 offset-m4">
+					<div class="card">
+						<div class="card-action fform white-text center">
+							<h3>Entrar</h3>
+						</div>
+						<div class="card-content">
+							<div class="form-field">
+								<label for="email">Email</label>
+								<input type="text" id="email">
+							</div><br/>
+							<div class="form-field">
+								<label for="password">Senha</label>
+								<input type="password" id="password">
+							</div><br/>
+							<div class="form-field">
+								<a href="#">Esqueceu a senha?</a>
+							</div><br/>
+							<div class="form-field">
+								<label for="lembre">
+									<input type="checkbox" id="lembre" />
+									<span>Lembre de Mim</span>
+								</label>
+							</div><br/>
+							<div class="form-field">
+								<a class="btn-large waves-effect waves-light" href="minhaconta.html" style="width: 100%">Entrar</a>
+							</div><br/><hr/><br/>
+							<div class="form-field">
+								<a class="btn-large waves-effect waves-light" href="minhaconta.html" style="width: 100%; background-color: gray;">Acesse sua conta com Google</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+			<footer class="footer-one">
+				<div class="container">
+					<div class="row">
+						<div class="col l6 s12">
+							<h4 class="white-text">
+								Contato
+							</h4>
+							<p class="white-text">
+								ABC 123, Brasil
+							</p>
+							<p class="white-text">
+								+00000000
+							</p>
+						</div>
+						<div class="col l6 s12">
+							<h4 class="white-text">
+								Mídia Social
+							</h4>
+							<ul>
+								<li>
+									<a href="#" class="white-text">Facebook</a>
+								</li>
+								<li>
+									<a href="#" class="white-text">Instagram</a>
+								</li>
+								<li>
+									<a href="#" class="white-text">Twitter</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row footer-two">
+					<div class="col l6 s12">
+						<p class="white-text">&copy Doação</p>
+					</div>
+					<div class="col l6 s12">
+						<p class="white-text">Design by Lucas, Vinicus e João</p>
+					</div>
+				</div>
+			</footer>
+		</section>
+
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="index.html">Home</a></li>
+			<li><a class="waves-effect waves-light btn" href="cadastro.html" >Criar Conta</a></li>
+		</ul> 
+	</section>
+
+
+	<section class="infomodal">
+		<div id="modal3" class="modal">
+			<div class="modal-content">
+				<h4 id="info-modal-heading">Em manutenção...</h4>
+				<p id="info-modal-content">Desculpe!, tente mais tarde</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="modal-close waves-effects btn-flat">Fechar</a>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+<!-- M script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- custom js -->
+<script src="js/loader.js"></script>
+</html>
