@@ -13,6 +13,27 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript">
+
+		function validar_esqSenha() {
+			
+			email = form_esqSenha.email.value
+
+			if (email == "" || email == null || email.length < 3) {
+				alert("Por favor, indique o seu email. "+ name);
+				email.focus();
+			} if (!email.includes("@") || email.indexOf('@') == email.length - 1) {
+				alert("Por favor, inclua @ no endereço e a sua sequencia.");
+				email.focus();
+			} else {
+				M.toast({html: 'Email enviado'})
+				form_esqSenha.email.value = null;
+			}
+		}
+
+	</script>
+
 </head>
 <body>
 
@@ -36,6 +57,7 @@
 				</ul>
 			</div>
 		</nav>
+	<form name="form_esqSenha" method="POST"> 
 		<section class="fcards">
 			<div class="row">
 				<div class="col s12 m4 offset-m4">
@@ -47,11 +69,11 @@
 							<div class="row">
 								<form class="col s12">
 									<div class="input-field col s12">
-										<input placeholder="Email" id="email" type="email" class="validate">
+										<input placeholder="Email" id="email" name="email" type="email" class="validate">
 										<label for="email">Email</label>
 									</div>
 									<div class="form-field">
-										<a onclick="M.toast({html: 'Email enviado'})" class="btn-large waves-effect waves-light" style="width: 100%">Enviar Email</a>
+										<a onclick="validar_esqSenha()" class="btn-large waves-effect waves-light" style="width: 100%">Enviar Email</a>
 									</div>
 								</form>
 							</div>
@@ -61,6 +83,7 @@
 				</div>
 			</div>
 		</section>
+	</form>
 
 		<section class="footer">
 			<footer class="footer-one">
