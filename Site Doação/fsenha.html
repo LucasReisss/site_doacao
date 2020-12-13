@@ -32,7 +32,7 @@
 						</form>
 					</li>
 					<li><a href="index.html">Home</a></li>
-					<li><a class="waves-effect waves-light btn" href="cadastro.html">Criar Conta</a></li>
+					<li><a href="login.html">Entrar</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -41,31 +41,19 @@
 				<div class="col s12 m4 offset-m4">
 					<div class="card">
 						<div class="card-action fform white-text center">
-							<h3>Entrar</h3>
+							<h3>Redefinir Senha</h3>
 						</div>
 						<div class="card-content">
-							<div class="form-field">
-								<label for="email">Email</label>
-								<input type="text" id="email">
-							</div><br/>
-							<div class="form-field">
-								<label for="password">Senha</label>
-								<input type="password" id="password">
-							</div><br/>
-							<div class="form-field">
-								<a href="fsenha.html">Esqueceu a senha?</a>
-							</div><br/>
-							<div class="form-field">
-								<label for="lembre">
-									<input type="checkbox" id="lembre" />
-									<span>Lembre de Mim</span>
-								</label>
-							</div><br/>
-							<div class="form-field">
-								<a class="btn-large waves-effect waves-light" href="minhaconta.html" style="width: 100%">Entrar</a>
-							</div><br/><hr/><br/>
-							<div class="form-field">
-								<a class="btn-large waves-effect waves-light" href="minhaconta.html" style="width: 100%; background-color: gray;">Acesse sua conta com Google</a>
+							<div class="row">
+								<form class="col s12">
+									<div class="input-field col s12">
+										<input placeholder="Email" id="email" type="email" class="validate">
+										<label for="email">Email</label>
+									</div>
+									<div class="form-field">
+										<a onclick="M.toast({html: 'Email enviado'})" class="btn-large waves-effect waves-light" style="width: 100%">Enviar Email</a>
+									</div>
+								</form>
 							</div>
 
 						</div>
@@ -120,7 +108,7 @@
 
 		<ul class="sidenav" id="mobile-demo">
 			<li><a href="index.html">Home</a></li>
-			<li><a class="waves-effect waves-light btn" href="cadastro.html" >Criar Conta</a></li>
+			<li><a href="login.html">Entrar</a></li>
 		</ul> 
 	</section>
 
