@@ -13,13 +13,38 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript">
+		
+		function validacao() {
+			
+			email = form_login.email.value;
+			senha = form_login.password.value;
+				
+			if (email == "" || email == null || email.length < 3) {
+				alert("Por favor, indique o seu email.");
+				email.focus();
+			} else if (!email.includes("@")) {
+				alert("Por favor, inclua @ no endereço.");
+				email.focus();
+			} else if (senha == "" || senha == null || senha.length < 5) {
+				alert("Por favor, informe a senha.");
+				senha.focus();
+			} else {
+				window.location.href = "minhaconta.html";
+			}
+	
+		}
+		
+	</script>
+
 </head>
 <body>
 
 	<section class="fnavbar">
 		<nav class="nav-fixed">
 			<div class="nav-wrapper">
-				<a href="index.html" class="brand-logo">Doação</a>
+				<a href="#" class="brand-logo">Doação</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li>
@@ -36,6 +61,7 @@
 				</ul>
 			</div>
 		</nav>
+	<form name="form_login" method="POST">
 		<section class="fcards">
 			<div class="row">
 				<div class="col s12 m4 offset-m4">
@@ -46,14 +72,14 @@
 						<div class="card-content">
 							<div class="form-field">
 								<label for="email">Email</label>
-								<input type="text" id="email">
+								<input type="text" id="email" name="email">
 							</div><br/>
 							<div class="form-field">
 								<label for="password">Senha</label>
-								<input type="password" id="password">
+								<input type="password" id="password" name="password">
 							</div><br/>
 							<div class="form-field">
-								<a href="fsenha.html">Esqueceu a senha?</a>
+								<a href="#">Esqueceu a senha?</a>
 							</div><br/>
 							<div class="form-field">
 								<label for="lembre">
@@ -62,7 +88,7 @@
 								</label>
 							</div><br/>
 							<div class="form-field">
-								<a class="btn-large waves-effect waves-light" href="minhaconta.html" style="width: 100%">Entrar</a>
+								<a class="btn-large waves-effect waves-light" style="width: 100%" onclick="validacao();">Entrar</a>
 							</div><br/><hr/><br/>
 							<div class="form-field">
 								<a class="btn-large waves-effect waves-light" href="minhaconta.html" style="width: 100%; background-color: gray;">Acesse sua conta com Google</a>
@@ -73,6 +99,8 @@
 				</div>
 			</div>
 		</section>
+	</form>
+
 
 		<section class="footer">
 			<footer class="footer-one">
